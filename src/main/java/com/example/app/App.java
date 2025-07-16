@@ -13,6 +13,10 @@ public class App
 
     public static void main( String[] args )
     {
-        logger.info( "Hello World!" );
+        logger.trace("Entering method foo()");
+        logger.debug("Received request from 198.12.34.56");
+        logger.info("User logged in: john");
+        logger.warn("Connection to server lost. Retrying...");
+        logger.error("Failed to write data to file: myFile.txt");
     }
 }
